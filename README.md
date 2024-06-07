@@ -22,7 +22,7 @@ Este desafio de código é parte da masterclass do @cartesiproject no Brasil, re
 ## Template de Mensagem
 ```text
 Estou participando da masterclass da @cartesiproject no Brasil, que está acontecendo no Inteli. 
-Aqui está um vídeo demonstrando a resolução do code challenge apresentado. Acesse o link [hyperlink], para ver o README onde explico como resolvi esse desafio.
+Aqui está um vídeo demonstrando a resolução do code challenge apresentado hoje. Acesse o link [hyperlink], para ver o README onde explico como resolvi esse desafio. #RollupWithCartesi #CartesiMasterclass
 ```
 
 ## Dicas
