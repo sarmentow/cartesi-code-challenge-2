@@ -8,7 +8,7 @@ Este desafio de código é parte da masterclass do @cartesiproject no Brasil, re
 
 1.  **Encontrar os Valores Corretos**:
     
-    -   Utilize o código fornecido para identificar o valor correto que deve ser adivinhado (guess), bem como outro valor que advém de uma "charada" (birthday_minus_the_guess). Assim que você conseguir gerar o output correto, mostre-o no explorer que roda na rota: http://localhost:8080/explorer/, faça o "decode" da payload (hex) e mostre a string gerada. Corra! Você precisa ser o primeiro a postar no Twitter|X juntamente com um README.md e um vídeo refazendo os inputs até o decode da string para ganhar o prêmio.
+    -   Utilize o código fornecido para identificar o valor correto que deve ser adivinhado (guess), bem como outro valor que advém de uma "charada" (birth_year_minus_the_guess). Assim que você conseguir gerar o output correto, mostre-o no explorer que roda na rota: http://localhost:8080/explorer/, faça o "decode" da payload (hex) e mostre a string gerada. Corra! Você precisa ser o primeiro a postar no Twitter|X juntamente com um README.md e um vídeo refazendo os inputs até o decode da string para ganhar o prêmio.
 
 2.  **Documentar o Processo**:
     
@@ -56,7 +56,7 @@ cartesi send generic \
     --chain-id=31337 \
     --rpc-url=http://127.0.0.1:8545 \
     --mnemonic-passphrase='test test test test test test test test test test test junk' \
-    --input='{"guess": <valor-aqui>, "birthday_minus_the_guess": <valor-aqui>}'
+    --input='{"guess": <valor-aqui>, "birth_year_minus_the_guess": <valor-aqui>}'
 ```
 
 Envie quantas inputs achar necessário para encontrar os valores certos!

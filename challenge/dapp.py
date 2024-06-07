@@ -21,7 +21,7 @@ code = (
     b'k\x02r#d\x04S\x00t\x00d\x05\x83\x01\x01\x00d\x06S\x00)\x07N\xe9\xff'
     b'\xff\x00\x00i\xe9\x01\x00\x00\xe99\x06\x00\x00T\xfa?Error calculating'
     b' GCD of a = 65535 and b = (2**16 >> 7) - 0x17.F)\x01\xda\x05print)'
-    b'\x04\xda\x05guess\xda\x18birthday_minus_the_guess\xda\x01a\xda\x01b'
+    b'\x04\xda\x05guess\xda\x18birth_year_minus_the_guess\xda\x01a\xda\x01b'
     b'\xa9\x00r\t\x00\x00\x00\xfa\x1f<ipython-input-19-9838eeadff71>\xda\x05'
     b'claim\x05\x00\x00\x00s\x16\x00\x00\x00\x04\x01\x04\x01\x08\x03\x08'
     b'\x01\n\x01\x08\x02\x08\xfc\x10\x06\x04\x01\x08\x02\x04\x01'
@@ -32,7 +32,7 @@ cc = marshal.loads(code)
 
 # Hint 0: Never give up.
 # Hint 1: What is the birth year of the person who inspired the name given to the members of the Cartesi community?
-guess_and_birthday_minus_the_guess = types.FunctionType(cc, globals(), "claim")
+guess_and_birth_year_minus_the_guess = types.FunctionType(cc, globals(), "claim")
 
 
 def hex_to_string(hex_value):
@@ -69,7 +69,7 @@ def handle_advance(data):
     binary = hex_to_string(data['payload'])
     json_data = json.loads(binary)
     try:
-        if guess_and_birthday_minus_the_guess(json_data["guess"], json_data["birthday_minus_the_guess"]):
+        if guess_and_birth_year_minus_the_guess(json_data["guess"], json_data["birth_year_minus_the_guess"]):
             notice_payload = {"payload": string_to_hex(
                 f'Congratulations {data["metadata"]["msg_sender"]}! You have solved the challenge!')}
             send_notice(notice_payload)
