@@ -63,7 +63,8 @@ Envie quantas inputs achar necessário para encontrar os valores certos!
 
 ### 4. Encontrando o Guess
 
-Utilize a função check_guess para testar diferentes valores até encontrar o valor correto que muda o estado para "RED", logo após, leia esse estado. Documente o processo no README.
+Leia o código!
+Hint 3: O output esperado é um notice! ;)
 
 ### 5. Postagem no Twitter
 
